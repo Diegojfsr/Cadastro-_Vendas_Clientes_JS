@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="funcoes.js"></script>
+    <title>Cadastro de Vendas</title>
+</head>
+<body>
+
+     <!--Formulário: Nome, telefone e email dos clientes-->
+     <form>
+        <table>
+            <caption>Informe seus Dados </caption>
+            <!--Nome do Cliente-->
+            <tr>
+                <td class="alinharRotulos">Nome:</td>
+                <td><input id="txtNomeCliente" type="text"></td>
+            </tr>
+            <!--Telefone do Cliente-->
+            <tr>
+                <td class="alinharRotulos">Telefone:</td>
+                <td><input id="txtFoneCliente" type="text"></td>
+            </tr>
+            <!--Email do Cliente-->
+            <tr>
+                <td class="alinharRotulos">Email:</td>
+                <td><input id="txtEmailCliente" type="text"></td>
+            </tr>
+            <!--Botoes-->
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="button" value="Cadastrar" class="alinhaBtns" onclick="validarCompra('txtNomeCliente','txtFoneCliente','txtEmailCliente')">
+                    <input type="button" value="Ver Compras" class="alinhaBtns" onclick="window.open('verCompras.html','_self')">
+                    <!--<input type="button" value="Ver estoque" class="alinhaBtns" onclick="window.open('verEstoque.html','_self')">
+                    <input type="reset" value="Limpar" class="alinhaBtns">-->
+                </td>
+            </tr>
+        </table>
+    </form>
+    
+</body>
+</html>
